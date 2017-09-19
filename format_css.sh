@@ -1,0 +1,15 @@
+###
+## Please run this script in the directory!!!!!
+## $> cd dist
+## $> ./format_css.sh
+###
+#!/bin/sh
+
+gsed -i "s/background:url(data:image\/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8\/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4BpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw\/eHBhY2tldCBiZWdpbj0i77u\/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpkNTljMWY1My1lMjkwLTRlOGUtYTlkNi00ZDM3ZWFjYjBjOGQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDE0NTUyMkY1MThGMTFFNzk0MzFERkEwNzU3NTU1MkQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDE0NTUyMkU1MThGMTFFNzk0MzFERkEwNzU3NTU1MkQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpiZDJkNGEwNS0xNWY2LTQwZjctOTdiOC05NTIxYzgyM2ViYjYiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDpkN2M1OGFjMC04MzFhLTExN2EtOTcwMy1hOTA1NWViNjVkZjYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw\/eHBhY2tldCBlbmQ9InIiPz6gXREPAAAA2UlEQVR42mK8z8mADzhB6X24FLDg0cwIxG1QtiUQ\/8emiAmPAb5AbA7FfrgUMeERb0Xit+BSi8uAKCDWQeKD2NFY\/QkMRFaoAmMgNoFiXSBmQ1P7C4gvA\/EZKD4LxFdABswFMpIYyANzQV7IxBdNeABITxYT1GlBUOcRCy5D9fyCBeJHIPYC4idEaH4CVfsRPRZAEqVEGFCKbBF6NAoQYYAAvnQgT4QBcvgMkEPjnwfic\/gswWXAaWj6hyUuP6gYQRc8B2JvIDYD4s3QHPgfyjaDyj1D1gAQYAC1XikXX1buFAAAAABJRU5ErkJggg==) no-repeat;//g" `find ./ -name "*.css" -print`
+gsed -i "s/\.el-dialog__header{padding:20px 20px 0/\.el-dialog__header{padding:20px 20px 0; text-align: center/g" `find ./ -name "*.css" -print`
+gsed -i "s/\.el-dialog__title{line-height:1;font-size:16px;font-weight:700/\.el-dialog__title{line-height:1;font-size:24px;font-weight:bold/g" `find ./ -name "*.css" -print`
+gsed -i "s/\.el-dialog__headerbtn{float:right;background:0 0;border:none;outline:0;padding:0;cursor:pointer/\.el-dialog__headerbtn{float:right;background:0 0;border:none;outline:0;padding:0;cursor:pointer;position: absolute; top: 0; right: -30px; width: 30px; height: 30px; background-color: #df0900/g" `find ./ -name "*.css" -print`
+gsed -i "s/\.el-dialog__headerbtn \.el-dialog__close{color:#bfcbd9/\.el-dialog__headerbtn \.el-dialog__close{color:#ffffff; font-size: 16px; position: absolute; top: 7px; right: 6px/g" `find ./ -name "*.css" -print`
+gsed -i "s/hover \.el-dialog__close{color:#20a0ff/hover \.el-dialog__close{color:#ffffff/g" `find ./ -name "*.css" -print`
+gsed -i "s/\.el-dialog__header{padding:20px/.el-dialog__header{padding:45px/g" `find ./ -name "*.css" -print`
+gsed -i "s/<\/title>/<\/title><script src='\/uahint\/judge.js' type='text\/javascript'><\/script>/g" index.html

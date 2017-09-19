@@ -1,0 +1,8 @@
+<li data-target="#carousel-example-generic" v-for="(img,i) in this.details.images" :data-slide-to="i" class="active">
+                <img :src="img" alt=""/>
+              </li>
+
+
+              <div class="item active" v-for="(simg,i) in details.images">
+                              <img :src="simg" alt=""/>
+                            </div>
